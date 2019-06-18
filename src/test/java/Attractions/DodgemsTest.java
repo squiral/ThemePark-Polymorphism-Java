@@ -1,3 +1,7 @@
+package Attractions;
+
+
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +17,7 @@ public class DodgemsTest {
     }
 
     @Test
-    public void getName(){
+    public void canGetName(){
         assertEquals("Dodgems", dodgems.getName());
     }
 }
