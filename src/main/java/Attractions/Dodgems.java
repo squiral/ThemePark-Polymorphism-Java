@@ -5,8 +5,8 @@ import Visitor.Visitor;
 
 public class Dodgems extends Attraction {
 
-    public Dodgems(String name){
-        super(name);
+    public Dodgems(String name, int rating){
+        super(name, rating);
     }
 
     public double defaultPrice() {
@@ -16,4 +16,5 @@ public class Dodgems extends Attraction {
     public double defaultPrice(Visitor visitor) {
         return 0;
     }
+
 }

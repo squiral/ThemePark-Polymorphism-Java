@@ -14,7 +14,7 @@ public class PlaygroundTest {
 
     @Before
     public void before(){
-        playground = new Playground("Bingal's");
+        playground = new Playground("Bingal's", 2);
         olderVisitor = new Visitor(17, 140, 20.00);
         youngerVisitor = new Visitor(12, 110, 10.00);
     }
