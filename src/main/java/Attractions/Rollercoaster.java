@@ -1,16 +1,28 @@
 package Attractions;
 
-public class Rollercoaster extends Attraction {
+import AbstractClasses.Attraction;
+import Interfaces.ISecurity;
+import Visitor.Visitor;
+
+public class Rollercoaster extends Attraction implements ISecurity {
 
     public Rollercoaster(String name){
         super(name);
     }
 
     public double defaultPrice() {
-        return 0;
+        return getDefaultPrice();
     }
 
     public double defaultPrice(Visitor visitor) {
-        return 0;
+        return getDefaultPrice();
+    }
+
+    public boolean isAllowedTo(Visitor visitor) {
+        if (visitor.getHeight() < 145){
+            return false;
+        }
+
+        return true;
     }
 }

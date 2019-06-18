@@ -1,5 +1,8 @@
 package Attractions;
 
+import AbstractClasses.Attraction;
+import Visitor.Visitor;
+
 public class Dodgems extends Attraction {
 
     public Dodgems(String name){
@@ -7,7 +10,7 @@ public class Dodgems extends Attraction {
     }
 
     public double defaultPrice() {
-        return 0;
+        return getDefaultPrice();
     }
 
     public double defaultPrice(Visitor visitor) {

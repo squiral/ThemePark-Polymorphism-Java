@@ -19,4 +19,13 @@ public class IceCreamStallTest {
         assertEquals("Mary's Milk Bar", iceCreamStall.getName());
     }
 
+    @Test
+    public void canGetParkingLot() {
+        assertEquals(12, iceCreamStall.getParkingLot());
+    }
+
+    @Test
+    public void canGetOwnerName() {
+        assertEquals("Mary", iceCreamStall.getOwnerName());
+    }
 }

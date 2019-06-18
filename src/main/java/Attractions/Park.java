@@ -1,5 +1,8 @@
 package Attractions;
 
+import AbstractClasses.Attraction;
+import Visitor.Visitor;
+
 public class Park extends Attraction {
 
     public Park(String name){
@@ -8,7 +11,7 @@ public class Park extends Attraction {
 
 
     public double defaultPrice() {
-        return 0;
+        return getDefaultPrice();
     }
 
     public double defaultPrice(Visitor visitor) {

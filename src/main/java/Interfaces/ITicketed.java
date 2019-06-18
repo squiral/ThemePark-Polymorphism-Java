@@ -1,6 +1,6 @@
-package Attractions;
+package Interfaces;
 
-import Attractions.Visitor;
+import Visitor.Visitor;
 
 public interface ITicketed {
 

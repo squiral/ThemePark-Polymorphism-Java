@@ -1,3 +1,5 @@
+package AbstractClasses;
+
 public abstract class Stall {
 
     private String name;
@@ -12,5 +14,13 @@ public abstract class Stall {
 
     public String getName(){
         return this.name;
+    }
+
+    public int getParkingLot() {
+        return parkingLot;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
     }
 }
