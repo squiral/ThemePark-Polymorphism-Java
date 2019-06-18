@@ -1,6 +1,6 @@
 package Attractions;
 
-public abstract class Attraction {
+public abstract class Attraction implements ITicketed {
 
     private String name;
 

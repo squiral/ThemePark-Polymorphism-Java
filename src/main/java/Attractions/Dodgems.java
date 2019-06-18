@@ -6,4 +6,11 @@ public class Dodgems extends Attraction {
         super(name);
     }
 
+    public double defaultPrice() {
+        return 0;
+    }
+
+    public double defaultPrice(Visitor visitor) {
+        return 0;
+    }
 }

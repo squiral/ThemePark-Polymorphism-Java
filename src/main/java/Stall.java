@@ -1,5 +1,3 @@
-package Stalls;
-
 public abstract class Stall {
 
     private String name;
